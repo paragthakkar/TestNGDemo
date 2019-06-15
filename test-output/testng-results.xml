@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-06-15T10:06:05Z" name="Default suite" finished-at="2019-06-15T10:06:39Z" duration-ms="33950">
+    <groups>
+    </groups>
+    <test started-at="2019-06-15T10:06:05Z" name="Default test" finished-at="2019-06-15T10:06:39Z" duration-ms="33950">
+      <class name="com.cura.tests.LoginTest">
+        <test-method is-config="true" signature="set()[pri:0, instance:com.cura.tests.LoginTest@707194ba]" started-at="2019-06-15T15:36:05Z" name="set" finished-at="2019-06-15T15:36:06Z" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cura.tests.LoginTest@707194ba]" started-at="2019-06-15T15:36:06Z" name="setUp" finished-at="2019-06-15T15:36:28Z" duration-ms="22187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="failedTest()[pri:0, instance:com.cura.tests.LoginTest@707194ba]" started-at="2019-06-15T15:36:28Z" name="failedTest" finished-at="2019-06-15T15:36:28Z" duration-ms="12" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.cura.tests.LoginTest.failedTest(LoginTest.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method is-config="true" signature="endtest(org.testng.ITestResult)[pri:0, instance:com.cura.tests.LoginTest@707194ba]" started-at="2019-06-15T15:36:28Z" name="endtest" finished-at="2019-06-15T15:36:31Z" duration-ms="2865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=failedTest status=FAILURE method=LoginTest.failedTest()[pri:0, instance:com.cura.tests.LoginTest@707194ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endtest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cura.tests.LoginTest@707194ba]" started-at="2019-06-15T15:36:31Z" name="setUp" finished-at="2019-06-15T15:36:37Z" duration-ms="5966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="performLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.cura.tests.LoginTest@707194ba]" started-at="2019-06-15T15:36:37Z" name="performLoginTest" data-provider="getTestData" finished-at="2019-06-15T15:36:39Z" duration-ms="1789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ThisIsNotAPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performLoginTest -->
+        <test-method is-config="true" signature="endtest(org.testng.ITestResult)[pri:0, instance:com.cura.tests.LoginTest@707194ba]" started-at="2019-06-15T15:36:39Z" name="endtest" finished-at="2019-06-15T15:36:39Z" duration-ms="232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=performLoginTest status=SUCCESS method=LoginTest.performLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.cura.tests.LoginTest@707194ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endtest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cura.tests.LoginTest@707194ba]" started-at="2019-06-15T15:36:39Z" name="tearDown" finished-at="2019-06-15T15:36:39Z" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cura.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
