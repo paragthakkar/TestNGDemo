@@ -44,8 +44,6 @@ public class LoginTest extends TestBase{
 	public void setUp() {
 		initialize();
 		loginPage = new LoginPage();
-		
-		
 	}
 	
 	@DataProvider
